@@ -26,8 +26,8 @@ public class HomeController : Controller
         model.SecondNumber = rand.Next(1001)-501; 
 
         //Можно раскомментировать эти строки для сокращения интервала чисел до [0;2], чтобы с большей вероятностью получить ситуацию "деление на ноль"
-        model.FirstNumber = rand.Next(3); 
-        model.SecondNumber = rand.Next(3);
+        //model.FirstNumber = rand.Next(3); 
+        //model.SecondNumber = rand.Next(3);
 
         //В случае, если второй операнд равен 0, происходит редирект на страницу с ошибкой об этом, 
         //на которой есть ссылка для возвращения к странице с генерацией чисел
