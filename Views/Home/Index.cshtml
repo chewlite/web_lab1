@@ -1,0 +1,36 @@
+﻿@model Operation  
+<form asp-controller="Home" asp-action="Index" method="post" >  
+    <div class="form-group">  
+
+        <div class="row">  
+            <label asp-for="FirstNumber" class="col-lg-2"></label>  
+            <input type="text" disabled="disabled" class="col-lg-2" asp-for="FirstNumber" />  
+        </div> 
+        <div class="row">  
+            <label asp-for="SecondNumber" class="col-lg-2"></label>  
+            <input type="text" disabled="disabled" class="col-lg-2" asp-for="SecondNumber" />  
+        </div> 
+
+        <div class="row">  
+            <label asp-for="Addition" class="col-lg-2"></label>  
+            <input type="text" disabled="disabled" class="col-lg-2" asp-for="Addition" />  
+        </div>     
+        <div class="row">  
+            <label asp-for="Substraction" class="col-lg-2"></label>  
+            <input type="text" disabled="disabled" class="col-lg-2" asp-for="Substraction" />  
+        </div>   
+        <div class="row">  
+            <label asp-for="Division" class="col-lg-2"></label>  
+            <input type="text" disabled="disabled" class="col-lg-2" asp-for="Division" />  
+        </div>     
+        <div class="row">  
+            <label asp-for="Multiplication" class="col-lg-2"></label>  
+            <input type="text" disabled="disabled" class="col-lg-2" asp-for="Multiplication" />  
+        </div>     
+
+        <div class="row">  
+            <input type="submit" value="Generate" asp-action="Index" />  
+        </div> 
+         
+    </div>  
+</form>  
